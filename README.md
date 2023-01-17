@@ -13,4 +13,5 @@ Proje C# .Net Core MVC yapısında oluşturuldu.
 3.Projeyi çalıştırıp UI ile test etmeye başlayabilirsiniz.<br>
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/77552205/212863493-4acae990-7e7e-4559-9888-d3479198591e.png)
