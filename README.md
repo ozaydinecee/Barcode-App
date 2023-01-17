@@ -11,5 +11,6 @@ Proje C# .Net Core MVC yapısında oluşturuldu.
 1.Projeyi Visual Studio'da açın ve gerekli NuGet paketlerini yükleyin.<br>
 2.X kargo tarafındaki servisten RMA kodunun alınması için gerekli olan bilgileri elde edin.(barkod)<br>
 3.Projeyi çalıştırıp UI ile test etmeye başlayabilirsiniz.<br>
-
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/77552205/212863493-4acae990-7e7e-4559-9888-d3479198591e.png)
