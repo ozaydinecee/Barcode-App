@@ -1,5 +1,5 @@
 # Barkod Uygulaması
-RMA Sipariş İade Sorgulama Projesi
+<h2>RMA Sipariş İade Sorgulama Projesi</h2>
 Bu proje, müşterilerin iade etmiş olduğu siparişlerin kargo barkodu ile sorgulanmasını ve sipariş verilerinin çekilmesini içermektedir.
 Proje C# .Net Core MVC yapısında oluşturuldu.
 
