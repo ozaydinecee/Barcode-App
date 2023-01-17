@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication3.Business.Abstract;
+using WebApplication3.Business.Concrete;
 
 namespace WebApplication3
 {
@@ -24,7 +26,10 @@ namespace WebApplication3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
+            // services.AddTransient<IOrderService, OrderManager>();
+            services.AddTransient<OrderManager>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -14,5 +14,9 @@ namespace WebApplication3.Models
         public string Barcode { get; set; }
         public string Description { get; set; }
         public string RmaCode { get; set; }
+
+        public OrderModel()
+        {
+        }
     }
 }
