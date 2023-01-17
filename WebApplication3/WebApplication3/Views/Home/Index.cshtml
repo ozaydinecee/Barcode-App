@@ -1,0 +1,32 @@
+﻿@model WebApplication3.Models.OrderModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Barkodu Giriniz:</h1>
+   
+    <form method="post" asp-controller="Home" asp-action="Index">
+        <div>@Html.TextBox("text")</div>
+        <input type="submit" value="Submit" id="submitButton" />
+    </form>
+
+    @{
+        if(Model != null)
+        {
+    <div>
+        <p>Customer name: @Model.UserNameAndSurname</p>
+        <p>Phone number: @Model.PhoneNumber</p>
+        <p>Cargo Description: @Model.Description</p>
+        <p>Cargo RMACode: @Model.RmaCode</p>
+        <p>Cargo barcode: @Model.Barcode</p>
+
+
+
+            </div>
+        }
+        
+    }
+
+</div>
