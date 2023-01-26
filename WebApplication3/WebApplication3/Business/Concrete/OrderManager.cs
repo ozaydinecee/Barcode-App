@@ -11,8 +11,8 @@ namespace WebApplication3.Business.Concrete
     {
         public OrderModel getRMADataByRMACode(string cargoBarcode)
         {
-            var kargoservis = new KargoServis();
-            var eticaretservis = new eTicaretServis();
+            CargoService kargoservis = new CargoService();
+            eTicaretService eticaretservis = new eTicaretService();
             var rmacode=kargoservis.getRmaCode(cargoBarcode);
             var result = eticaretservis.getOrderDetail(rmacode);
 

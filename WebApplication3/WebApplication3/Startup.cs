@@ -26,9 +26,7 @@ namespace WebApplication3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            // services.AddTransient<IOrderService, OrderManager>();
-            services.AddTransient<OrderManager>();
-
+            services.AddScoped<IOrderService,OrderManager>();
 
         }
 
