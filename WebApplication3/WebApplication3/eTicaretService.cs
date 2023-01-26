@@ -23,23 +23,7 @@ namespace WebApplication3
             //LINQ(Language Integrated Query)
             var result = orderModels.Find(c => c.RmaCode == rmacode);
             return result;
-            //OrderModel result = null;
-            //foreach (var order in orderModels)
-            //{
-            //    if (order.RmaCode == rmacode)
-            //    {
-            //        result = order;
-            //        break;
-            //    }
-            //}
-            //if (result != null)
-            //{
-            //    return result;
-            //}
-            //else
-            //{
-            //    return null;
-            //}
+           
         }
 
     }

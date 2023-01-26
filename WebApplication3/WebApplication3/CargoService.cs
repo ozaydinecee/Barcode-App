@@ -22,16 +22,6 @@ namespace WebApplication3
             var result = orderModels.Find(c => c.Barcode == cargoBarcode);
             rmaCode = result == null ? "" : result.RmaCode;
             return rmaCode;
-            //OrderModel foundOrder = null;
-            //foreach (OrderModel orderModel in orderModels)
-            //{
-            //    if(orderModel.Barcode == cargoBarcode) {
-            //    foundOrder = orderModel;
-            //    break;
-            //    }
-            //}
-
-            //return foundOrder.RmaCode;
         }
         
     }
