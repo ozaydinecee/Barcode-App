@@ -14,14 +14,10 @@ namespace WebApplication3.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-       // public OrderManager orderManager;
         IOrderService _orderService;
-
-        //public HomeController(ILogger<HomeController> logger)
         public HomeController(ILogger<HomeController> logger, IOrderService orderService)
         {
             _logger = logger;
-            //orderManager = new OrderManager();
             _orderService = orderService;
         }
         public ActionResult Index()
@@ -34,8 +30,6 @@ namespace WebApplication3.Controllers
         
         public ActionResult Index(string text)
         {
-           // OrderModel model = orderManager.getRMADataByRMACode(text);
-           
            var model=_orderService.getRMADataByRMACode(text);
             return View(model);
         }
